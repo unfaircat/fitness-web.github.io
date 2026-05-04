@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fitness Community</title>
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b0b0b;color:white}
+header{background:#1a0000;padding:20px;position:sticky;top:0}
+nav{display:flex;justify-content:center;gap:30px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-weight:bold}
+nav a:hover{color:#ef4444}
+.hero{padding:100px 20px;text-align:center;background:linear-gradient(120deg,#1a0000,#0b0b0b)}
+.hero h1{font-size:48px;margin-bottom:20px;color:#ef4444}
+.hero p{max-width:700px;margin:auto;margin-bottom:30px}
+.btn{background:#b91c1c;color:white;padding:14px 24px;border-radius:10px;text-decoration:none;font-weight:bold}
+section{padding:70px 20px;max-width:1100px;margin:auto}
+section h2{color:#ef4444;margin-bottom:30px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px}
+.card{background:#1a1a1a;border-radius:12px;padding:25px;box-shadow:0 10px 20px rgba(0,0,0,0.5)}
+.card h3{margin-top:0;color:#ef4444}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
+.feature{background:#1a1a1a;padding:25px;border-radius:12px}
+footer{background:#1a0000;text-align:center;padding:40px;margin-top:60px}
+.small{opacity:.8;font-size:14px}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<a href="#home">Domů</a>
+<a href="#workouts">Tréninky</a>
+<a href="#mealplan">Jídelníček</a>
+<a href="#nutrition">Strava</a>
+<a href="#community">Komunita</a>
+<a href="#join">Discord</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<h1>Fitness Community</h1>
+<p>Moderní fitness komunita kde můžeš sdílet svůj progress, najít workout plány, získat rady a zlepšit svou fyzickou formu.</p>
+<a class="btn" href="https://discord.gg/bbZvkZPr3z" target="_blank">Připojit se na Discord</a>
+</section>
+
+<section id="features">
+<h2>Co v komunitě najdeš</h2>
+<div class="features">
+<div class="feature"><h3>Workout plány</h3><p>Tréninkové programy pro začátečníky i pokročilé.</p></div>
+<div class="feature"><h3>Motivace</h3><p>Sdílej svůj progress a transformace s komunitou.</p></div>
+<div class="feature"><h3>Fitness rady</h3><p>Pomoc s technikou cviků a tréninkem.</p></div>
+<div class="feature"><h3>Výživa</h3><p>Tipy na dietu, kalorie a fitness recepty.</p></div>
+</div>
+</section>
+
+<section id="workouts">
+<h2>Tréninky podle svalů</h2>
+<div class="cards">
+<div class="card"><h3>Leg Day</h3><p>Squats<br>Leg Press<br>Lunges<br>Romanian Deadlift<br>Calf Raises</p></div>
+<div class="card"><h3>Chest Day</h3><p>Bench Press<br>Incline Bench Press<br>Dumbbell Press<br>Chest Fly<br>Push-ups</p></div>
+<div class="card"><h3>Back Day</h3><p>Deadlift<br>Pull-ups<br>Lat Pulldown<br>Barbell Row<br>Seated Row</p></div>
+<div class="card"><h3>Shoulder Day</h3><p>Overhead Press<br>Lateral Raises<br>Rear Delt Fly<br>Arnold Press</p></div>
+<div class="card"><h3>Arm Day</h3><p>Bicep Curl<br>Hammer Curl<br>Triceps Pushdown<br>Skull Crushers</p></div>
+<div class="card"><h3>Abs / Core</h3><p>Crunches<br>Leg Raises<br>Russian Twists<br>Plank</p></div>
+</div>
+</section>
+
+<section id="mealplan">
+<h2>Týdenní jídelníček</h2>
+<div class="cards">
+<div class="card"><h3>Pondělí</h3><p>Snídaně: Ovesná kaše + protein<br>Oběd: Kuře a rýže<br>Večeře: Losos a zelenina</p></div>
+<div class="card"><h3>Úterý</h3><p>Snídaně: Vajíčka a toast<br>Oběd: Hovězí maso a brambory<br>Večeře: Kuřecí salát</p></div>
+<div class="card"><h3>Středa</h3><p>Snídaně: Protein smoothie<br>Oběd: Krůtí maso a rýže<br>Večeře: Tvaroh s ovocem</p></div>
+<div class="card"><h3>Čtvrtek</h3><p>Snídaně: Ovesná kaše<br>Oběd: Kuřecí wrap<br>Večeře: Tuňákový salát</p></div>
+<div class="card"><h3>Pátek</h3><p>Snídaně: Omeleta<br>Oběd: Losos a rýže<br>Večeře: Protein jogurt</p></div>
+<div class="card"><h3>Sobota</h3><p>Snídaně: Protein pancakes<br>Oběd: Steak a brambory<br>Večeře: Kuřecí salát</p></div>
+<div class="card"><h3>Neděle</h3><p>Snídaně: Jogurt a ovoce<br>Oběd: Krůtí maso a rýže<br>Večeře: Tvaroh s ořechy</p></div>
+</div>
+</section>
+
+<section id="nutrition">
+<h2>Fitness Strava</h2>
+<div class="cards">
+<div class="card"><h3>Bulking</h3><p>Zvýšený příjem kalorií pro růst svalů.</p></div>
+<div class="card"><h3>Cutting</h3><p>Kalorický deficit pro spalování tuku.</p></div>
+<div class="card"><h3>Protein recepty</h3><p>Zdravé a proteinové jídla pro fitness.</p></div>
+<div class="card"><h3>Makra</h3><p>Správný poměr proteinů, sacharidů a tuků.</p></div>
+</div>
+</section>
+
+<section id="community">
+<h2>Naše komunita</h2>
+<p>Na Discord serveru můžeš sdílet progress, ptát se na rady a motivovat ostatní.</p>
+</section>
+
+<section id="join">
+<h2>Připoj se</h2>
+<p>Připoj se k naší fitness komunitě na Discordu.</p>
+<a class="btn" href="https://discord.gg/bbZvkZPr3z" target="_blank">Join Discord</a>
+</section>
+
+<footer>
+<p>© 2026 Fitness Community</p>
+<p class="small">Fitness komunita pro motivaci a progress.</p>
+</footer>
+
+</body>
+</html>
